@@ -12,7 +12,8 @@ class Item:
     self.fname = fname
     self.value = 0
     self.array = None
-    self.load_file()
+    if fname:
+      self.load_file()
 
   def load_file(self):
     with open(self.fname,"r") as file:
