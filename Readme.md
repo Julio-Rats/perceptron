@@ -10,7 +10,7 @@ li{color:#5085c0}
 ## Grupo 6, Autores:
 
 - Júlio... NUSP ...
-- Junior Rodrigues Ribeiro NUSP 972510
+- Junior Rodrigues Ribeiro NUSP 9725190
 - Luiz Henrique Romero NUSP ...
 
 ## DESCRIÇÃO
