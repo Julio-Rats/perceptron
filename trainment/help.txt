@@ -1,0 +1,17 @@
+Na pasta 
+    ./
+você pode criar algum 
+    ./arquivo.py
+e dentro dele você faz import do arquivo 
+    ./trainment/input.py 
+conforme abaixo    
+    from trainment.input import Item
+
+então passe o nome do arquivo
+    obj = Item("./trainment/01.txt")
+
+
+print(obj)       #print no terminal
+print(obj.fname) #print o nome do arquivo
+print(obj.array) #numpy 1d-array
+print(obj.value) #o valor +1 ou -1 indicando A para cima ou A para baixo
