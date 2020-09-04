@@ -66,7 +66,7 @@ Implementa as seguintes funções
    > Função para criação e treinamento do perceptron, cuja a entrada é um vetor com as entradas (exemplo: um vetor de matrizes, onde cada matriz é uma entrada para uma saida do perceptron), sendo esse vetor genérico (podendo ser um ventor de inteiros, matrizes.. etc) apatir de listas ou tipo numpy.array. A saida sendo um vetor com os valores de saida do perceptron para cada entrada. Delta como parâmetro de aprendizagem, e maxInter como número maximo de iterações, uma vez estourada a rede irá gerar uma mensagem de alerta, mas continuará a devolver o perceptron com os pesos a iteração maxInter.
 
    - `perceptron(x)`
-      Objeto que define uma função, na qual é o produto da entrada com os pesos e bias previamente calculados (entrada unica, exemplo: apenas uma matriz que foi utilizada no processo de aprendizagem).
+   >    Objeto que define uma função, na qual é o produto da entrada com os pesos e bias previamente calculados (entrada unica, exemplo: apenas uma matriz que foi utilizada no processo de aprendizagem).
 
 ### ARQUIVO PRINCIPAL `./main.py`
 
