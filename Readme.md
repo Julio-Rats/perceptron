@@ -9,7 +9,7 @@ li{color:#5085c0}
 
 ## Grupo 6, Autores:
 
-- Júlio... NUSP ...
+- Júlio César de Melo Cândido NUSP 11926153
 - Junior Rodrigues Ribeiro NUSP 9725190
 - Luiz Henrique Romero NUSP ...
 
@@ -56,7 +56,7 @@ Os métodos especiais `__repr__()` e `__str__()` foram implementados para que se
 Implementa as seguintes funções
 
 1. `limit_degrau_bin(x)`
-   > Esta função faz ...
+   > Teste $R$ $\mathbb R$
 2. `sigmoid(x)`
    > Esta função faz ...
 3. `limit_degrau_neg(x)`
