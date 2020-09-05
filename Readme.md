@@ -70,11 +70,11 @@ Os métodos especiais `__repr__()` e `__str__()` foram implementados para que se
 Implementa as seguintes funções
 
 1. `limit_degrau_bin(x)`
-   > Função utilizada como função de ativação (não está sendo utilizada) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna 0, se maior retorna 1
+   > Função utilizada como função de ativação (não está sendo utilizada) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna 0, se maior retorna 1.
 2. `sigmoid(x)`
    > Função utilizada como função ativação (não está sendo utilizada) do percepctron, do tipo sigmoide (1/(1+e^(-x))).
 3. `limit_degrau_neg(x)`
-   > Função utilizada como função de ativação (utilizada neste projeto) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna -1, se maior retorna 1
+   > Função utilizada como função de ativação (utilizada neste projeto) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna -1, se maior retorna 1.
 4. `training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, maxInter=5e4)`
 
    > Função para criação e treinamento do perceptron, cuja a entrada é um vetor com as entradas (exemplo: um vetor de matrizes, onde cada matriz é uma entrada para uma saida do perceptron), sendo esse vetor genérico (podendo ser um ventor de inteiros, matrizes.. etc) apatir de listas ou tipo numpy.array. A saida sendo um vetor com os valores de saida do perceptron para cada entrada. Delta como parâmetro de aprendizagem, e maxInter como número maximo de iterações, uma vez estourada o treinamento irá gerar uma mensagem de alerta, mas continuará e devolverá o perceptron com os pesos da iteração maxInter (existindo saídas diferentes da esperada).
