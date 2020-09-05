@@ -3,15 +3,32 @@ h1{color:#0a306c;font-weight:bold}
 h2{color:#1056a5}
 h3{color:#4076b5}
 li{color:#5085c0}
+button{display:flex;flex-direction:row;align-items:center}
+button:hover{background-color: #67f4}
+img{width:20px;height:20px;}
+a{text-decoration:none;color:#a00e7b}
+a:hover{text-decoration:none;color:#a00e7b;font-weight:bold;cursor:alias;}
 </style>
 
 # REDES NEURAIS ARTIFICIAIS, DISCIPLINA SCC5809
 
 ## Grupo 6, Autores:
 
-- Júlio César de Melo Cândido NUSP 11926153
+- Júlio... NUSP ...
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/Julio-Rats" target="_blank">Github</a>
+  </button>
 - Junior Rodrigues Ribeiro NUSP 9725190
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/j5r" target="_blank">Github</a>
+  </button>
 - Luiz Henrique Romero NUSP ...
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/neoluiz" target="_blank">Github</a>
+  </button>
 
 ## DESCRIÇÃO
 
@@ -56,19 +73,18 @@ Os métodos especiais `__repr__()` e `__str__()` foram implementados para que se
 Implementa as seguintes funções
 
 1. `limit_degrau_bin(x)`
-   > Função utilizada como função de ativação (não está sendo utilizada) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna 0, se maior retorna 1
+   > Esta função faz ...
 2. `sigmoid(x)`
-   > Função utilizada como função ativação (não está sendo utilizada) do percepctron, do tipo sigmoide (1/(1+e^(-x))).
+   > Esta função faz ...
 3. `limit_degrau_neg(x)`
-   > Função utilizada como função de ativação (utilizada neste projeto) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna -1, se maior retorna 1
+   > Esta função faz ...
 4. `training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, maxInter=5e4)`
 
-   > Função para criação e treinamento do perceptron, cuja a entrada é um vetor com as entradas (exemplo: um vetor de matrizes, onde cada matriz é uma entrada para uma saida do perceptron), sendo esse vetor genérico (podendo ser um ventor de inteiros, matrizes.. etc) apatir de listas ou tipo numpy.array. A saida sendo um vetor com os valores de saida do perceptron para cada entrada. Delta como parâmetro de aprendizagem, e maxInter como número maximo de iterações, uma vez estourada o treinamento irá gerar uma mensagem de alerta, mas continuará e devolverá o perceptron com os pesos da iteração maxInter (existindo saídas diferentes da esperada).
+   > esta função faz ...
 
    - `perceptron(x)`
-   >    Objeto que define o perceptron treinado utilizando como função de ativação a mesma durante o treinamento. Caracterizando como o produto da entrada ('X') com os pesos e bias previamente calculados (entrada unica, exemplo: apenas uma matriz que foi utilizada no processo de aprendizagem).
+     - esta função faz ...
 
 ### ARQUIVO PRINCIPAL `./main.py`
 
 Este arquivo começa importando `import numpy as np`, `from perceptron import *` e `from trainment.input import Item`.
-Após as importações ele carrega as 'k' entradas utilizadas para aprendizagem do perceptron (Utilizada como 10). Após a leitura e armazenagem das entradas (matriz) , o perceptron é treinado, e depois as n-k entradas são lidas e usadas como avaliação do perceptron. Durante a avaliação é printado a matriz com seu valor e com o valor estipulado pelo perceptron, por último é mostrado um resumo com números de acertos e erros do perceptron.
