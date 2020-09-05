@@ -5,7 +5,6 @@ h3{color:#4076b5}
 li{color:#5085c0}
 button{display:flex;flex-direction:row;align-items:center}
 button:hover{background-color: #67f4}
-img{width:20px;height:20px;}
 a{text-decoration:none;color:#a00e7b}
 a:hover{text-decoration:none;color:#a00e7b;font-weight:bold;cursor:alias;}
 </style>
@@ -16,17 +15,16 @@ a:hover{text-decoration:none;color:#a00e7b;font-weight:bold;cursor:alias;}
 
 - Júlio... NUSP ...
   <button type="button">
-  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  ⟶
   <a href="https://github.com/Julio-Rats" target="_blank">Github</a>
   </button>
 - Junior Rodrigues Ribeiro NUSP 9725190
-  <button type="button">
-  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <button type="button">  ⟶
   <a href="https://github.com/j5r" target="_blank">Github</a>
   </button>
 - Luiz Henrique Romero NUSP ...
   <button type="button">
-  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  ⟶
   <a href="https://github.com/neoluiz" target="_blank">Github</a>
   </button>
 
