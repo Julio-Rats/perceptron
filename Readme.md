@@ -3,6 +3,11 @@ h1{color:#0a306c;font-weight:bold}
 h2{color:#1056a5}
 h3{color:#4076b5}
 li{color:#5085c0}
+button{display:flex;flex-direction:row;align-items:center}
+button:hover{background-color: #67f4}
+img{width:20px;height:20px;}
+a{text-decoration:none;color:#a00e7b}
+a:hover{text-decoration:none;color:#a00e7b;font-weight:bold;cursor:alias;}
 </style>
 
 # REDES NEURAIS ARTIFICIAIS, DISCIPLINA SCC5809
@@ -10,8 +15,20 @@ li{color:#5085c0}
 ## Grupo 6, Autores:
 
 - Júlio César de Melo Cândido NUSP 11926153
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/Julio-Rats" target="_blank">Github</a>
+  </button>
 - Junior Rodrigues Ribeiro NUSP 9725190
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/j5r" target="_blank">Github</a>
+  </button>
 - Luiz Henrique Romero NUSP ...
+  <button type="button">
+  <img src="https://img.icons8.com/ios/452/forward-arrow.png" alt="Ir para"/>
+  <a href="https://github.com/neoluiz" target="_blank">Github</a>
+  </button>
 
 ## DESCRIÇÃO
 
@@ -63,10 +80,10 @@ Implementa as seguintes funções
    > Função utilizada como função de ativação (utilizada neste projeto) do perceptron, do tipo degrau, qualquer valor para 'X' menor ou igual a zero retorna -1, se maior retorna 1
 4. `training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, maxInter=5e4)`
 
-   > Função para criação e treinamento do perceptron, cuja a entrada é um vetor com as entradas (exemplo: um vetor de matrizes, onde cada matriz é uma entrada para uma saida do perceptron), sendo esse vetor genérico (podendo ser um ventor de inteiros, matrizes.. etc) apatir de listas ou tipo numpy.array. A saida sendo um vetor com os valores de saida do perceptron para cada entrada. Delta como parâmetro de aprendizagem, e maxInter como número maximo de iterações, uma vez estourada a rede irá gerar uma mensagem de alerta, mas continuará a devolver o perceptron com os pesos a iteração maxInter.
+   > Função para criação e treinamento do perceptron, cuja a entrada é um vetor com as entradas (exemplo: um vetor de matrizes, onde cada matriz é uma entrada para uma saida do perceptron), sendo esse vetor genérico (podendo ser um ventor de inteiros, matrizes.. etc) apatir de listas ou tipo numpy.array. A saida sendo um vetor com os valores de saida do perceptron para cada entrada. Delta como parâmetro de aprendizagem, e maxInter como número maximo de iterações, uma vez estourada o treinamento irá gerar uma mensagem de alerta, mas continuará e devolverá o perceptron com os pesos da iteração maxInter (existindo saídas diferentes da esperada).
 
    - `perceptron(x)`
-   >    Objeto que define o perceptron treinado utilizando como função de ativação a mesma durante o treinamento. Caracterizando como o produto da entrada ('X') com os pesos e bias previamente calculados (entrada unica, exemplo: apenas uma matriz que foi utilizada no processo de aprendizagem).
+     > Objeto que define o perceptron treinado utilizando como função de ativação a mesma durante o treinamento. Caracterizando como o produto da entrada ('X') com os pesos e bias previamente calculados (entrada unica, exemplo: apenas uma matriz que foi utilizada no processo de aprendizagem).
 
 ### ARQUIVO PRINCIPAL `./main.py`
 
