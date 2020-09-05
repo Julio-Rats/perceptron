@@ -22,7 +22,7 @@ a:hover{text-decoration:none;color:#a00e7b;font-weight:bold;cursor:alias;}
   <button type="button">⟶
   <a href="https://github.com/j5r" target="_blank">Github</a>
   </button>
-- Luiz Henrique Romero NUSP ...
+- Luiz Henrique Romero NUSP 10095090
   <button type="button">⟶
   <a href="https://github.com/neoluiz" target="_blank">Github</a>
   </button>
