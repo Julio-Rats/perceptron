@@ -19,28 +19,28 @@ def limit_degrau_neg(x):
 
 def training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, maxInter = 5e4):
 
-	entrada_p = np.array(entrada)
-	saida_p   = np.array(saida)
-#	pesos_p   = np.array(np.random.random(entrada_p[0].shape))
-	pesos_p   = np.zeros(entrada_p[0].shape)
 
-	result_p  = []
-#	bias  = np.radom.random()
-	bias  = 0
+	if (len(entrada) != len(saida)):
+		print("\n\n[ERRO]: Erro a quantidade de entrada é diferente da quantidade de saidas\n\n")
+		exit(-1)
 
-	for k in range(len(saida)):
-		result_p.append(f_activ(np.sum(entrada_p[0]*pesos_p)+bias))
-
-	erro_p    = np.sum(saida_p-np.array(result_p))
-	inter = 0
-
-	while (erro_p != 0)and(inter < maxInter):
-
+	n_entradas = len(saida)
+	entrada_p  = np.array(entrada)
+	saida_p    = np.array(saida)
+	pesos_p    = np.zeros(entrada_p[0].shape)
+	bias       = 0.0
+	erro_p     = 0.0
+	inter      = 0.0
+	
+	for i_entrada in range(n_entradas):
+		erro_p = erro_p + saida_p[i_entrada] - f_activ(np.sum(entrada_p[i_entrada]*pesos_p)+bias)
+		 
+	while (erro_p != 0.0)and(inter < maxInter):
 		inter = inter + 1 	
-		for i in range(len(entrada_p)):
-			erro_p = saida_p[i] - f_activ((np.sum(entrada_p[i]*pesos_p))+bias)
-			if (erro_p != 0):
-				pesos_p = pesos_p + (delta*entrada_p[i]*(erro_p))
+		for i_entrada in range(n_entradas):
+			erro_p = saida_p[i_entrada] - f_activ((np.sum(entrada_p[i_entrada]*pesos_p))+bias)
+			if (erro_p != 0.0):
+				pesos_p = pesos_p + (delta*entrada_p[i_entrada]*(erro_p))
 				bias = bias + delta*erro_p
 				break
 	
@@ -49,7 +49,7 @@ def training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, ma
 		
 	def perceptron(x):
 		return f_activ(np.sum(np.array(x)*pesos_p)+bias)
-
+	
 	return perceptron
 
 #============================================================================================#
