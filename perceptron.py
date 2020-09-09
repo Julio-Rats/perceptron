@@ -21,7 +21,7 @@ def training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, ma
 
 
 	if (len(entrada) != len(saida)):
-		print("\n\n[ERRO]: Erro a quantidade de entrada é diferente da quantidade de saidas\n\n")
+		print("\n\n[ERRO]: A quantidade de entrada é diferente da quantidade de saidas\n\n")
 		exit(-1)
 
 	n_entradas = len(saida)
@@ -35,7 +35,7 @@ def training_perceptron(entrada, saida, f_activ=limit_degrau_neg, delta=5e-1, ma
 	for i_entrada in range(n_entradas):
 		erro_p = erro_p + saida_p[i_entrada] - f_activ(np.sum(entrada_p[i_entrada]*pesos_p)+bias)
 		 
-	while (erro_p != 0.0)and(inter < maxInter):
+	while ((erro_p != 0.0) and (inter < maxInter)):
 		inter = inter + 1 	
 		for i_entrada in range(n_entradas):
 			erro_p = saida_p[i_entrada] - f_activ((np.sum(entrada_p[i_entrada]*pesos_p))+bias)
