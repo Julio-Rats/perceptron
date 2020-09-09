@@ -29,8 +29,7 @@ class Item:
         if len(line)>1:
           matrix.extend([return_1(char) for char in line.split()])
 
-      self.array = np.array(matrix,float)
-
+      self.array = np.array(matrix,float).reshape(Item._shape)
 
 
   def __repr__(self):

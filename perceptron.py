@@ -3,7 +3,7 @@ import numpy as np
 #============================================================================================#
 
 def limit_degrau_bin(x):
-	if x <= 0:
+	if x <= 0.0:
 		return 0.0
 	return 1.0
 
@@ -11,7 +11,7 @@ def sigmoid(x):
 	return 1.0/(1.0+np.exp(-x))
 
 def limit_degrau_neg(x):
-	if x <= 0:
+	if x <= 0.0:
 		return -1.0
 	return 1.0
 

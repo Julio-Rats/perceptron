@@ -24,8 +24,8 @@ for num_file in data_training:
 
 trained_perceptron = training_perceptron(np.array(input_learning), results_correct)
 
-hit    = 0
-missed = 0
+hit    = 0.0
+missed = 0.0
 
 print("\n\t|========================================|")
 print("\t|              Avaliação                 |")
